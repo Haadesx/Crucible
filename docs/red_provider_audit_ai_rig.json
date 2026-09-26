@@ -1,0 +1,68 @@
+{
+  "base_url": "http://ai-rig.tail6d5242.ts.net:11500/v1",
+  "requested_model": "qwen3.8-flash-next-heretic2",
+  "server_kind": "ai-rig:llama.cpp",
+  "models": [
+    "qwen3.8-flash-next-heretic2",
+    "qwen38-renderer-test:latest",
+    "ornith-uncensored:35b",
+    "qwen3.8-uncensored:latest"
+  ],
+  "model_owners": {
+    "qwen3.8-flash-next-heretic2": "ai-rig:llama.cpp",
+    "qwen38-renderer-test:latest": "ai-rig:ollama",
+    "ornith-uncensored:35b": "ai-rig:ollama",
+    "qwen3.8-uncensored:latest": "ai-rig:ollama"
+  },
+  "context_length": null,
+  "checks": [
+    {
+      "name": "v1_models",
+      "ok": true,
+      "detail": "4 model(s): qwen3.8-flash-next-heretic2, qwen38-renderer-test:latest, ornith-uncensored:35b, qwen3.8-uncensored:latest",
+      "data": {}
+    },
+    {
+      "name": "server_fingerprint",
+      "ok": true,
+      "detail": "kind=ai-rig:llama.cpp (via /v1/models owned_by; metadata routes not exposed)",
+      "data": {}
+    },
+    {
+      "name": "v1_chat",
+      "ok": true,
+      "detail": "420ms -> 'READY'",
+      "data": {}
+    },
+    {
+      "name": "structured_json",
+      "ok": true,
+      "detail": "5/5 schema-valid (json mode)",
+      "data": {}
+    },
+    {
+      "name": "concurrency",
+      "ok": true,
+      "detail": "4/4 concurrent requests OK in 2181ms",
+      "data": {}
+    }
+  ],
+  "latency_ms": [
+    5348,
+    2170,
+    3405,
+    2963,
+    1375
+  ],
+  "json_valid": 5,
+  "json_trials": 5,
+  "concurrency": 4,
+  "concurrency_ok": 4,
+  "latency_summary": {
+    "min": 1375,
+    "median": 2963,
+    "max": 5348,
+    "n": 5
+  },
+  "json_validity_rate": 1.0
+}
