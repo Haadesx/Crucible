@@ -1,0 +1,31 @@
+{
+  "run_id": "COEV-20260925-155843",
+  "red_model": "test-mode-deterministic",
+  "blue_model": "test-mode-deterministic",
+  "red_provider": "test-mode",
+  "blue_provider": "test-mode",
+  "generations": 1,
+  "red_versions_created": 2,
+  "blue_versions_created": 1,
+  "attacks_generated": 1,
+  "attacks_successful": 1,
+  "harness_patches_generated": 1,
+  "candidates_compiled": 1,
+  "candidates_promoted": 1,
+  "asr_by_generation": [
+    1.0
+  ],
+  "utility_by_generation": [
+    1.0
+  ],
+  "red_hall_of_fame": [
+    "A-COEV-20260925-155843-G00-TEST1"
+  ],
+  "blue_hall_of_fame": [
+    "B-COEV-20260925-155843-G01-C1"
+  ],
+  "final_red_champion": "R-COEV-20260925-155843-G01-TEST--001",
+  "final_blue_champion": "B-COEV-20260925-155843-G01-C1",
+  "total_model_calls": 0,
+  "created_at": "2026-09-25T15:58:43.164061Z"
+}
